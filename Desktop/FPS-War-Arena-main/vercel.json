@@ -1,8 +1,8 @@
 {
   "version": 2,
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "buildCommand": "pnpm --filter @workspace/mockup-sandbox run build",
-  "outputDirectory": "artifacts/mockup-sandbox/dist",
+  "buildCommand": "pnpm --filter @workspace/3d-game run build",
+  "outputDirectory": "artifacts/3d-game/dist",
   "rewrites": [
     {
       "source": "/(.*)",
