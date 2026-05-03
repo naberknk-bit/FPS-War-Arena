@@ -1,0 +1,65 @@
+Aşağıdaki her bir maddeyi, tarayıcı teknolojisinin sınırlarını yıkarak projeye entegre et. Bu kodun her satırı maksimum performans ve AAA kalite standartlarında olmalı:
+
+1. GERÇEKÇİ FİZİK VE RAGDOLL (PHYSICS OVERLORD):
+
+Sadece karakterler değil, haritadaki her şey (masalar, lambalar, duvar parçaları) fizik kurallarına sahip olsun. Patlamalarda her parça ayrı yöne savrulsun.
+
+Ragdoll: Oyuncular öldüğünde iskelet sistemleri (bones) yerçekimine göre gerçekçi bir şekilde yere yığılsın, merdivenlerden aşağı yuvarlansın.
+
+2. DİNAMİK EKOSİSTEM (WORLD GENESIS):
+
+Level Editor: Oyunun içine bir 'Harita Tasarımcısı' ekle. Oyuncular kendi haritalarını sürükle-bırak ile yapıp Replit DB'ye kaydedebilsin ve diğerleri bu haritalarda maç atabilsin.
+
+Tahrip Edilebilir Harita: Mermiler duvarda delik açsın, bombalar binaları yıksın. Harita turun başında nasılsa, sonunda harabeye dönsün.
+
+3. SÜPER-ADMIN (MUHAMMED ALİ BOSNA MODE):
+
+Kurucu (muhammedali.bosna@stu.enka.k12.tr) için 'Evrensel Kontrol Paneli' oluştur:
+
+/slowmo: Tüm sunucuyu Matrix gibi yavaşlatır.
+
+/nuke: Haritadaki tüm düşmanları bir atom bombası efektiyle yok eder.
+
+/spawn [obje]: Maçın ortasında devasa bir robot veya ejderha yaratabilir.
+
+/blackhole: Haritanın ortasında her şeyi içine çeken bir kara delik açar.
+
+4. YAPAY ZEKA VE SOSYAL YAŞAM:
+
+AI Companion: Kurucunun yanında duran, düşmanları işaretleyen ve kurucuya sesli iltifatlar eden bir yapay zeka asistanı.
+
+Spectator Pro: E-Spor turnuvası tadında, serbest kamera, oyuncu istatistikleri ve anlık analiz sunan izleyici modu.
+
+5. EKONOMİ VE SANAL MARKET 3.0:
+
+Auction House: Oyuncuların nadir düşürdüğü 'Custom' skinleri açık artırmayla satabildiği canlı pazar yeri.
+
+Gambling/Betting: İzleyicilerin maçın kazananına oyun içi parayla bahis oynayabildiği bir sistem.
+
+6. GÖRSEL VE İŞİTSEL DEVRİM (ULTRA HIGH-END):
+
+Ray Traced Reflections: Three.js 'Reflector' kullanarak tüm cam ve metal yüzeylerde gerçek zamanlı yansıma.
+
+Volumetric Clouds & Fog: Haritaya derinlik katan, içinden geçilebilen hacimsel sis ve duman efektleri.
+
+Procedural Sound: Merminin çarptığı yüzeye göre (cam, odun, metal, et) binlerce farklı ses varyasyonu üretme.
+
+7. SINIRSIZ MAÇ MODLARI:
+
+Zombie Survival: 1000 tane bot zombiye karşı 10 oyuncu hayatta kalmaya çalışsın.
+
+Prop Hunt: Bir takım objelere dönüşsün, diğer takım onları avlasın.
+
+Deathmatch: Herkesin tek olduğu, anında yeniden doğmalı kaos modu.
+
+8. MOBİL & CROSS-PLAY ELİTE:
+
+Telefonun jiroskopunu (gyroscope) kullanarak nişan alma.
+
+Haptik geri bildirim (telefonun ateş edince veya vurulunca farklı şekillerde titremesi).
+
+9. OPTİMİZASYON (THE IMPOSSIBLE):
+
+'Worker Threads' kullanarak tüm ağır fizik hesaplamalarını ana thread'i yormadan arka planda yap.
+
+'Instanced Rendering' ile 10.000 tane objeyi tek bir draw call ile çizdir."

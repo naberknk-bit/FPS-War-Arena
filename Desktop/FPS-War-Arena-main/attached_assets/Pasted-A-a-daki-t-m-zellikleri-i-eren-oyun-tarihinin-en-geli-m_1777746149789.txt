@@ -1,0 +1,41 @@
+Aşağıdaki tüm özellikleri içeren, oyun tarihinin en gelişmiş tarayıcı tabanlı FPS projesini inşa et. Kod yapısı inanılmaz temiz ve modüler olmalı:
+
+OMNI-AUTH & PROFİL: Replit Auth ile giriş yap. muhammedali.bosna@stu.enka.k12.tr kullanıcısını 'Sınırsız Yetkili Creator' yap. Her oyuncunun seviye, XP, RR, KDA ve Skin Envanterini Replit DB üzerinde tut.
+
+3D LOBİ & SOSYAL SİSTEM: Oyuncular maça girmeden önce 3D bir meydanda buluşsun. Burada chat yapabilsinler ve 'V' tuşuyla dans (emote) edebilsinler.
+
+GELİŞMİŞ SAVAŞ SİSTEMİ:
+
+Recoil & Pattern: Silahlar rastgele değil, belirli bir spray pattern ile seksin.
+
+Wallbang: Mermiler materyale göre (tahta, ince duvar) hasarı azalarak arkaya geçsin.
+
+Destruction: Belirli 'Voxel' objeler patlamalarla parçalansın.
+
+KARAKTER SINIFLARI (AGENTS):
+
+Duelist: Hızlı Dash ve Flash bombası.
+
+Controller: Haritadan seçilen 3 noktaya Smoke atma.
+
+Sentinel: Alanı koruyan turret (otomatik taret) yerleştirme.
+
+GOD CLASS (Sadece Kurucu): Uçma, içinden geçilmeyen kalkan ve tek atan altın silah.
+
+EKONOMİ & MARKET: 13 turluk maç sistemi. 'B' menüsü çok detaylı olsun; zırh çeşitleri, yetenek dolumları ve silah modifiyeleri (susturucu, dürbün) eklensin.
+
+GÖRSEL ŞÖLEN (VFX/SFX):
+
+Dynamic Lighting: Mermiler ateşlendiğinde etrafı anlık aydınlatsın.
+
+Spatial Audio: Sesler 3 boyutlu olsun; sağdan gelen ayak sesini sadece sağdan duy.
+
+Cinematic MVP: Maç sonu kazanan takımın en iyi oyuncusuna ağır çekim, arkada patlamalar eşliğinde bir 'Highlight' ekranı yap.
+
+RANKED & MATCHMAKING: 5v5 gerçek zamanlı, bot içermeyen, rütbe tabanlı eşleşme sistemi. Maç bulma ekranında oyuncuların rütbe ikonları ve animasyonlu kartları gözüksün.
+
+MOBİL & CROSS-PLAY: Mobil Toggle aktif olduğunda ekranın her yerini kaplayan özelleştirilebilir (HUD Editor) butonlar ve pürüzsüz bir joystick sistemi ekle.
+
+ADMIN PANEL (P TUŞU): Kurucu için tüm sunucuyu yöneten bir 'Tanrı Paneli' yap: Oyuncu banla, yerçekimini değiştir, haritayı değiştir, herkese skin dağıt, turnuva modunu aç.
+
+PERFORMANS: Tüm 3D objeleri BufferGeometry ile optimize et, dokuları WebP kullan ve sunucu gecikmesini (Lag) engellemek için 'Client-Side Prediction' algoritmaları yaz."

@@ -1,0 +1,46 @@
+🎮 PROJECT: VALO-REPLIT SUPREME EDITION
+"Lütfen aşağıda detaylandırılan tüm özellikleri içeren, Three.js ve Socket.io tabanlı kapsamlı bir FPS oyunu oluştur. Kodları modüler dosyalara (server.js, client.js, UI.js, Systems.js) ayır:
+
+1. Giriş ve Kurucu Yetkileri (Replit Auth):
+
+Replit Auth kullan. muhammedali.bosna@stu.enka.k12.tr e-postalı kullanıcıyı KURUCU olarak tanımla.
+
+Kurucu Ayrıcalıkları: Adı kırmızı ve yanında 🛡️ ikonuyla gözüksün. Tüm skinler açık olsun. /fly, /god, /giveall, /kick [isim] komutlarını kullanabilsin. Ölünce tüm haritayı izleyebilsin (Admin Spectate).
+
+2. Oyun Modları ve Matchmaking:
+
+Normal Mod: Botlarla 5v5 savaş.
+
+Ranked (Dereceli) Mod: Bot yok. 10 gerçek oyuncu (5v5) dolana kadar 'Sıra Bekleniyor (X/10)' ekranı göster. Replit Database kullanarak RR (Rank Puanı) sistemi kur (Demir -> Radyant). Kazanınca +25, kaybedince -20 RR.
+
+Özel Odalar: Oda kodu ile arkadaş ekleme ve 'VS Modu' (Botları kapatma/Takım seçme) özelliği.
+
+3. Savaş Mekanikleri & Ekonomi:
+
+Silahlar: Vandal, Phantom, Operator ve tabanca. 'B' menüsü ile satın alma (Eco sistemi). Zırh (HP 150 yapar) ve yetenek alımı.
+
+Yetenekler: Her oyuncuda 1 adet Smoke (E) yeteneği olsun. Kurucuya özel 'Ulti' (Wallhack) barı 7 kill'de dolsun.
+
+Spike: '4' tuşuyla kurma (45 sn sonra patlama), imha etme ve 13 tur üzerinden galibiyet sistemi.
+
+4. Gelişmiş Arayüz ve Geri Bildirim:
+
+Skor Tablosu (Tab): KDA, Ping ve Kurucu logolu liste.
+
+Kill Feed: Sağ üstte kim kimi nasıl vurdu gösteren akış.
+
+Mini Map: Sol üstte 2D radar.
+
+Vuruş Hissi: Hitmarker (X), Headshot sesi (tiz çınlama), vuruş sesi ve ekranda 'Kritik Vuruş' yazısı.
+
+5. Ses ve Grafikler:
+
+Audio Engine: Ayak sesleri, Spike 'bip' sesleri, silah sesleri.
+
+Post-Processing: Bloom (parlama), Anti-aliasing ve Vignette efektleri.
+
+Skinler: Kurucuya özel 'Elderflame' (animasyonlu) skin, diğerlerine kasa açma (Case) sistemiyle çıkan renkli kaplamalar.
+
+6. Chat Sistemi:
+
+Küfür filtreleme (bad words filter) içeren, 'Enter' ile açılan chat. Kurucunun mesajları altın çerçeveli gözüksün. WebRTC ile Voice Chat (Sesli Sohbet) ekle."

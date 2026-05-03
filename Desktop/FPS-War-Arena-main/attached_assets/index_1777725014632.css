@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 100% 1%;
+    --foreground: 120 100% 65%;
+    --card: 120 80% 3%;
+    --card-foreground: 120 100% 65%;
+    --popover: 120 80% 3%;
+    --popover-foreground: 120 100% 65%;
+    --primary: 120 100% 45%;
+    --primary-foreground: 120 100% 2%;
+    --secondary: 0 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 120 30% 8%;
+    --muted-foreground: 120 40% 40%;
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 120 80% 15%;
+    --input: 120 80% 10%;
+    --ring: 120 100% 45%;
+    --radius: 0.5rem;
+    --sidebar-background: 120 80% 3%;
+    --sidebar-foreground: 120 100% 65%;
+    --sidebar-primary: 120 100% 45%;
+    --sidebar-primary-foreground: 120 100% 2%;
+    --sidebar-accent: 120 30% 8%;
+    --sidebar-accent-foreground: 120 100% 65%;
+    --sidebar-border: 120 80% 15%;
+    --sidebar-ring: 120 100% 45%;
+
+    --cyber-green: 120 100% 45%;
+    --cyber-green-dim: 120 60% 25%;
+    --cyber-red: 0 100% 50%;
+    --cyber-amber: 45 100% 50%;
+    --cyber-cyan: 180 100% 50%;
+    --glass-bg: 120 80% 4%;
+    --glass-border: 120 80% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Share Tech Mono', monospace;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: hsla(var(--glass-bg) / 0.7);
+    border: 1px solid hsla(var(--glass-border) / 0.5);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius);
+    box-shadow: 0 0 15px hsla(var(--cyber-green) / 0.1), inset 0 0 30px hsla(var(--cyber-green) / 0.03);
+  }
+
+  .cyber-glow {
+    text-shadow: 0 0 7px hsl(var(--cyber-green)), 0 0 20px hsla(var(--cyber-green) / 0.5);
+  }
+
+  .red-glow {
+    text-shadow: 0 0 7px hsl(var(--cyber-red)), 0 0 20px hsla(var(--cyber-red) / 0.5);
+  }
+
+  .cyber-btn {
+    @apply px-4 py-2 font-bold uppercase tracking-wider text-sm cursor-pointer;
+    background: hsla(var(--cyber-green) / 0.1);
+    border: 1px solid hsl(var(--cyber-green));
+    color: hsl(var(--cyber-green));
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.2s;
+    border-radius: var(--radius);
+  }
+  .cyber-btn:hover {
+    background: hsla(var(--cyber-green) / 0.25);
+    box-shadow: 0 0 20px hsla(var(--cyber-green) / 0.4);
+  }
+  .cyber-btn:active {
+    transform: scale(0.96);
+  }
+
+  .cyber-btn-red {
+    background: hsla(var(--cyber-red) / 0.1);
+    border: 1px solid hsl(var(--cyber-red));
+    color: hsl(var(--cyber-red));
+    @apply px-4 py-2 font-bold uppercase tracking-wider text-sm cursor-pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.2s;
+    border-radius: var(--radius);
+  }
+  .cyber-btn-red:hover {
+    background: hsla(var(--cyber-red) / 0.25);
+    box-shadow: 0 0 20px hsla(var(--cyber-red) / 0.4);
+  }
+  .cyber-btn-red:active {
+    transform: scale(0.96);
+  }
+
+  .cyber-input {
+    @apply px-3 py-2 text-sm w-full;
+    background: hsla(var(--cyber-green) / 0.05);
+    border: 1px solid hsla(var(--cyber-green) / 0.3);
+    color: hsl(var(--cyber-green));
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: var(--radius);
+  }
+  .cyber-input:focus {
+    outline: none;
+    border-color: hsl(var(--cyber-green));
+    box-shadow: 0 0 10px hsla(var(--cyber-green) / 0.3);
+  }
+
+  .scanline::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsla(var(--cyber-green) / 0.03) 2px,
+      hsla(var(--cyber-green) / 0.03) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .jarvis-aktif {
+    box-shadow: 0 0 20px hsla(var(--cyber-green) / 0.8) !important;
+    transform: scale(0.97) !important;
+    transition: all 0.1s !important;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+@keyframes glitch {
+  0% { transform: translate(0) skew(0deg); filter: hue-rotate(0deg); }
+  10% { transform: translate(-5px, 3px) skew(2deg); filter: hue-rotate(90deg); }
+  20% { transform: translate(5px, -2px) skew(-1deg); }
+  30% { transform: translate(-3px, -4px) skew(3deg); filter: hue-rotate(180deg); }
+  40% { transform: translate(4px, 2px) skew(-2deg); }
+  50% { transform: translate(-2px, 5px) skew(1deg); filter: hue-rotate(270deg); }
+  60% { transform: translate(3px, -3px) skew(-3deg); }
+  70% { transform: translate(-4px, 1px) skew(2deg); filter: hue-rotate(360deg); }
+  80% { transform: translate(2px, -4px) skew(-1deg); }
+  90% { transform: translate(-1px, 3px) skew(3deg); }
+  100% { transform: translate(0) skew(0deg); filter: hue-rotate(0deg); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px hsla(120, 100%, 45%, 0.3); }
+  50% { box-shadow: 0 0 25px hsla(120, 100%, 45%, 0.6), 0 0 50px hsla(120, 100%, 45%, 0.2); }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes flash-red {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: hsla(0, 100%, 50%, 0.2); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+@keyframes countdownPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@keyframes cameraScan {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}
+@keyframes personMove {
+  0% { left: 5%; }
+  50% { left: 85%; }
+  100% { left: 5%; }
+}
+@keyframes holoShimmer {
+  0% { transform: translateX(-100%) rotate(135deg); }
+  50% { transform: translateX(200%) rotate(135deg); }
+  100% { transform: translateX(-100%) rotate(135deg); }
+}
+
+
+/* ── JARVIS-M MissionControl yardımcı sınıfı ── */
+.section-label {
+  @apply text-[10px] text-muted-foreground mb-1.5 tracking-widest uppercase font-bold;
+  font-family: 'Orbitron', sans-serif;
+}
